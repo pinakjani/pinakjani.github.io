@@ -15,36 +15,89 @@
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style type="text/css">
+			
+			.typewriter h1 {
+			  overflow: hidden; /* Ensures the content is not revealed until the animation */
+			  border-right: .15em solid orange; /* The typwriter cursor */
+			  white-space: nowrap; /* Keeps the content on a single line */
+			  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+			  letter-spacing: .30em; /* Adjust as needed */
+			  animation: 
+			    typing 3.5s steps(20, end),
+			    blink-caret .50s step-end infinite;
+			}
+
+			/* The typing effect */
+			@keyframes typing {
+			  from { width: 5%; }
+			  to { width: 80% }
+			}
+
+			/* The typewriter cursor effect */
+			@keyframes blink-caret {
+			  from, to { border-color: transparent }
+			  50% { border-color: white; }
+				}
+		</style>
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-			<header id="header">
-				<a href="#" class="image avatar"><img src="images/dp.jpg" alt="" /></a>
-				<h1><strong>I am Pinak Jani</strong>, a graduate student at WPI.<br />
-				</a>.</h1>
+			<header id="header" style="
+			padding-top: 10%;
+			padding-left: 3%;
+			background-image: none,none;background: linear-gradient(to right, #064663 60%,white 10% );">
+				<div class = "dp-image" style="
+				border-radius: 50%;
+				background-image: url('dp.jpg');
+				height: 70%;
+				background-position: center;
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-blend-mode: multiply;
+				">
+
+				
+				</div>
+				
 			</header>
 
 		<!-- Main -->
-			<div id="main">
+			<div id="main" >
 
 				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Pinak Jani</h2>
+					<section id="one" style="background-color: #E6E6E6;
+					width: 100%;
+					padding: 20px;
+					color: #041C32;
+					box-shadow: 10px 10px 5px 12px grey;
+					font-family: 'Times New Roman', Times, serif;
+					font-size: 20px;
+					">
+					<header class="major">
+							<div class = "typewriter" >
+					<h1 style="color: #041C32;
+					font-weight: bold;
+					font-family: 'Courier'; 
+					text-shadow: #FC0 1px 0 10px;
+					 ">Hi! I am 
+					Pinak Jani</h1>
+							
 						</header>
-						<p>I am Pinak Jani, a Graduate Student at Worcester Polytechnic Institute pursuing Robotics Enginnering. I am a technical specialist in the Robotics domain with a demonstrated history of working with robots.
-							My skills and interest align towards Mobile-Robots, Robot Manipulation, Robot Vision and Controls.
-							At WPI, I have worked on Academic Projects involving Robot Manipulation and Autonmous Grasping of Unknown Objects, 3D Reconstruction of Objects using Stereo Vision and Visual Servoing using Robotic Arm. 
-							Being part of Team KJSCE Robocon, I have worked on designing and fabricating Autonmous Mobile-Robots and Legged-Robots for various competitions like ABU-ROBOCON Competition and E-Yantra Robotics Competition.
-							Working as a Research Intern at IIT Bombay, I developed a novel state-of-the-art approach using NLP to create a Deep Learning Model that predicts Bias in Indian News Journals. 
-							Currently, I am actively looking for Internship Opportunities for Summer 2022.
+						<p style="font-family: Arial, Helvetica, sans-serif;">A Graduate Student at Worcester Polytechnic Institute pursuing Robotics Enginnering. 
+							
+							I am a technical specialist in the Robotics domain with a demonstrated history of working with robots.
+
+
+							
 						</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
